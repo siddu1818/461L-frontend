@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "heroku-postbuild": "npm run build",
     "start": "serve -s dist -l $PORT",
     "preview": "vite preview"
   },
+
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,4 +27,5 @@
     "vite": "^5.0.0"
   }
 }
+
 
